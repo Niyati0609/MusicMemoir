@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MusicMemoir</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+   
+
+    <div class="main">
+        <div class="bg"></div>
+        <h1 class="l"> MusicMemoir</h1>
+        <p class="t">every feeling deservers a soundtrack</p>
+    </div>
+    <div class="sign">
+        <a href="{{ url_for('login') }}">
+        <p>Login/SignIn</p>
+        </a>
+    </div>
+
+    <div class="journal">
+    <h1> TELL US ABOUT YOUR DAY!</h1>
+    </div>
+
+     <form action="/results" method="post">
+    <div class="j">
+        
+        <input type="text" name="title" placeholder="First day of freedom..">
+        <textarea name="journal" rows="10" cols="40" placeholder="Today was my last exam.I feel relieved, excited, and a littlescared about what comes next...."></textarea>
+        <button class="button2" type="submit"> Create my Soundtrack!</button>
+    </div>
+</form> 
+    <div class="circle">
+    </div>
+    <a href="/index">
+   <div class="nav small">🏠</div>
+</a>
+<a href="/archive">
+<div class="nav small1">🕒</div>
+</a>
+<a href="/results">
+<div class="nav small2">🎧</div>
+</a>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MusicMemoir</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="bg"></div>
+        <h1 class="l"> MusicMemoir</h1>
+        <p class="t">every feeling deservers a soundtrack</p>
+    </div>
+    <div class="memory {{mem.color}}">
+        
+            <div class="input">
+                <h3>Title:{{ mem.title }}</h3>
+                <br>
+                <p>{{mem.date}}</p>
+                <br><br>
+                <h3> Your Entry:</h3><p>{{mem.journal}} </p>
+                <br>
+                <h3>Reflection:</h3><p>{{mem.reflection}}</p><br>
+                <h3>Sound Track:</h3>
+                {% for track in tracks %}
+                     <div class="track">
+                         <!-- <a href="{{ link1 }}" target="_blank">
+                        <div class="btn">🎵</div>
+                        </a> -->
+                <p>🎵{{track}}</p><br>
+                </div>
+                {% endfor %}
+            
+            </div>
+        
+    </div>
+</body>
+</html>

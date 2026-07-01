@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MusicMemoir</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="main">
+    <h1 class="l">MusicMemoir</h1>
+    <p class="t"> every feeling deserves a soundtrack</p>
+    </div>
+
+     <div class="circle">
+    </div>
+   <a href="/results">
+   <div class="nav small">🎧</div>
+</a>
+<a href="/index">
+<div class="nav small1">🏠</div>
+</a>
+<a href="/archive">
+<div class="nav small2">🕒</div>
+</a>
+    
+ <div class="ai">
+    
+        <h3>A Note for You</h3>
+
+        <p> {{ reflection }}</p>
+    
+</div>
+<div class="title">
+<h2> Today's Soundtrack:</h2>
+<br>
+</div>
+
+<div class="songs">
+
+    <div class="s1">
+  
+    <div class="pic"><img src="{{ cover1 }}"></div> 
+     <div class="text"> 
+    <h4>Title: {{ song1_name }}</h4>
+    <h4>Singer: {{ song1_artist }}</h4>
+    <h4>Year: {{ song1_year }}</h4>
+  </div> 
+  <a href="{{ link1 }}" target="_blank">
+  <div class="btn">🎵</div>
+  </a>
+</div>
+
+<div class="s2">
+    <div class="pic"><img src="{{ cover2 }}"></div>
+    <div class="text">
+    <h4>Title: {{ song2_name }}</h4>
+    <h4>Singer:{{ song2_artist }} </h4>
+    <h4>Year: {{ song2_year }}</h4>
+    </div>
+    <a href="{{ link2 }}" target="_blank">
+    <div class="btn">🎵</div></a>
+</div>
+<div class="s3">
+    <div class="pic"><img src="{{ cover3 }}"></div>
+    <div class="text">
+    <h4>Title: {{ song3_name }}</h4>
+    <h4>Singer: {{ song3_artist }}</h4>
+    <h4>Year: {{ song3_year }}</h4>
+</div>
+<a href="{{ link3 }}" target="_blank">
+<div class="btn">🎵</div></a>
+</div>
+<div class="s4">
+  <div class="pic"><img src="{{ cover4 }}"></div>
+    <div class="text">
+    <h4>Title: {{ song4_name }}</h4>   
+    <h4>Singer:{{ song4_artist }} </h4>
+    <h4>Year: {{ song4_year }}</h4>
+  </div>
+  <a href="{{ link4 }}" target="_blank">
+  <div class="btn">🎵</div></a>
+    </div>
+
+    <div class="s5">
+    <div class="pic"><img src="{{ cover5 }}"></div>
+    <div class="text">
+    <h4>Title:{{ song5_name }} </h4>
+    <h4>Singer:{{ song5_artist }} </h4>
+    <h4>Year: {{ song5_year }}</h4>
+  
+</div>
+<a href="{{ link5 }}" target="_blank">
+<div class="btn">🎵</div></a>
+</div>
+
+<div class="s6">
+    <div class="pic"><img src="{{ cover6 }}"></div>
+    <div class="text">
+    <h4>Title:{{ song6_name }} </h4>
+    <h4>Singer: {{ song6_artist }}</h4> 
+    <h4>Year: {{ song6_year }}</h4>
+  
+</div>
+<a href="{{ link6 }}" target="_blank">
+<div class="btn">🎵</div></a>
+</div>
+
+
+</body>
+</html>
